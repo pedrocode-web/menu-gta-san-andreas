@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Theft Auto: San Andreas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Assets/256x256.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main-menu-container">
+        <h1>Main Menu</h1>
+    </div>
+
+    <div class="menu-list-container">
+        <ol>
+            <li><a href="#" class="hover-sound">START GAME</a><audio class="hover-audio" src="Assets/hover.MP3" preload="auto"></audio></li>
+            <li><a href="#" class="hover-sound">OPTIONS</a><audio class="hover-audio" src="Assets/hover.MP3" preload="auto"></audio></li>
+            <li><a href="#" class="hover-sound">QUIT GAME</a><audio class="hover-audio" src="Assets/hover.MP3" preload="auto"></audio></li>
+        </ol>
+    </div>
+
+    <audio id="hover-sound" src="Assets/hover.MP3" preload="auto"></audio>
+    <audio id="open-sound" src="Assets/open.mp3" preload="auto"></audio>
+
+    <div id="audio-warning-modal" class="modal">
+        <div class="modal-content">
+            <h2>Aviso de Áudio</h2>
+            <p>Devido a limitação de alguns navegadores, o áudio só pode ser reproduzido após interação do usuário.</p>
+            <p>Clique no botão abaixo para liberar a reprodução de áudio no site.</p>
+            <button id="enable-audio-btn">Liberar Áudio</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
